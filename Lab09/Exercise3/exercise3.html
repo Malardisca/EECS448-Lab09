@@ -1,0 +1,60 @@
+<html>
+    <head>
+		<title>Exercise 3: Web Store</title>
+        <link rel="stylesheet" href="exercise3.css" type="text/css">
+      </head>
+    <body>
+        <div>
+            <h1>Greenland Lobster</h1>
+        </div>
+        <form action="exercise3.php" method="post" id="orderForm" onsubmit="return validateForm();">
+            <ul>
+                <li></li>
+                    <h3>Customer Login Information</h3>
+                    <div>
+                        <label for="user">User E-mail:</label>
+                        <input type="email" id="user" name="email" placeholder="something@something.com">
+                    </div>
+                    <div>
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="password" required>
+                    </div>
+                </li>
+                <li>
+                    <h3>Varieties of Lobster</h3>
+                    <div>
+                        <img id="shrimp" src="images/shrimp.jpg">
+                        <p>Golden Epic Royale Lobster: $2,000</p>
+                        <input type="number" id="Epic" name="Epic" placeholder="Quantity" min="0" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img id="another_shrimp" src="images/another_shrimp.png">
+                        <p>Sliver Rare King Lobster: $1,000</p>
+                        <input type="number" id="Rare" name="Rare" placeholder="Quantity" min="0" required>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img id="same_shrimp" src="images/same_shrimp.png">
+                        <p>Great Value Ordinary Shrimp: $0.92</p>
+                        <input type="number" id="Normal" name="Normal" placeholder="Quantity" min="0" required>
+                    </div>
+                </li>
+                <li>
+                    <h3>Shipping Options</h3>
+                    <input type="radio" name="ship" id="seven" value="f"/>
+                    <label for="seven">7 Days - Free!</label><br>
+                    <input type="radio" name="ship" id="fifty" value="o"/>
+                    <label for="fifty">Overnight - $50.00</label><br>
+                    <input type="radio" name="ship" id="five" value="t"/>
+                    <label for="five">3 Day - $5.00</label><br>
+                </li>
+            </ul>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <script type="text/javascript" src="exercise3.js"></script>
+    </body>
+</html>
